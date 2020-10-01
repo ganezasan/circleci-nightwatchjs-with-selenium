@@ -1,0 +1,25 @@
+{
+  "name": "circleci-nightwatchjs-with-selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch -t ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganezasan/circleci-nightwatchjs-with-selenium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganezasan/circleci-nightwatchjs-with-selenium/issues"
+  },
+  "homepage": "https://github.com/ganezasan/circleci-nightwatchjs-with-selenium#readme",
+  "dependencies": {
+    "nightwatch": "^1.4.3"
+  },
+  "devDependencies": {
+    "chromedriver": "^85.0.1"
+  }
+}
