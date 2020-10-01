@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14.4.0-browsers
+    steps:
+      - checkout
+      - run:
+          name: Download Selenium
+          command: curl -O http://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar
+      - run:
+          name: Start Selenium
+          command: java -jar selenium-server-standalone-3.6.0.jar -log selenium.log
+          background: true
+      - run: npm install
+      - run: npm test
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
