@@ -3,3 +3,6 @@ tests_output
 node_modules
 selenium-server-standalone*
 
+chromedriver.log
+selenium-server.log
+selenium.log.lck

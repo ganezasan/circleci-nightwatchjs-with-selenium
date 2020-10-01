@@ -5,31 +5,22 @@ module.exports = {
 
   test_settings: {
     default: {
-      launch_url: 'https://nightwatchjs.org'
-    },
-
-    selenium: {
-      // Selenium Server is running locally and is managed by Nightwatch
       selenium: {
-        start_process: false,
+        "start_process" : false,
+        host: "0.0.0.0",
         port: 4444,
         cli_args: {
           'webdriver.chrome.driver': require('chromedriver').path,
-        }
+        },
+        "silent": true,
       },
-      webdriver: {
-        start_process: false
-      }
-    },
-
-    'selenium.chrome': {
-      extends: 'selenium',
-      desiredCapabilities: {
-        browserName: 'chrome',
-        chromeOptions : {
-          w3c: false
-        }
-      }
+      desiredCapabilities : {
+        "browserName" : "chrome",
+        "chromeOptions": {
+          "args" : ["--no-sandbox"]
+        },
+        "marionette": true,
+      },
     },
   }
 }

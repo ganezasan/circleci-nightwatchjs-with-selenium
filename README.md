@@ -11,7 +11,7 @@ npm install
 ## Download selenium
 
 ```
-curl -O http://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar
+curl -O https://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar
 ```
 
 ## Run
