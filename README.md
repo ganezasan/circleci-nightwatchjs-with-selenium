@@ -1,4 +1,5 @@
 # circleci-nightwatchjs-with-selenium
+[![CircleCI](https://circleci.com/gh/ganezasan/circleci-nightwatchjs-with-selenium.svg?style=svg)](https://circleci.com/gh/ganezasan/circleci-nightwatchjs-with-selenium)
 
 This is an example project for using nightwatchjs with selenium on CircleCI
 
